@@ -1,0 +1,53 @@
+.essentials {
+  margin-top: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 50rem 1fr;
+      grid-template-columns: 1fr 50rem 1fr;
+      grid-template-areas: "... essentials-content ...";
+  /* 1245px */
+}
+
+.essentials-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: essentials-content;
+}
+
+.essentials-content-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #142b6f;
+}
+
+.essentials-content-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 77.8125em) {
+  .essentials {
+    -ms-grid-columns: minmax(0.5rem, 1fr) minmax(0, 45rem) minmax(0.5rem, 1fr);
+        grid-template-columns: minmax(0.5rem, 1fr) minmax(0, 45rem) minmax(0.5rem, 1fr);
+  }
+}
+
+.essential {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.essential-svg-cont .essential-svg {
+  color: #142b6f;
+  font-size: 2rem;
+}
+
+.essential p {
+  color: #142b6f;
+  font-size: 1rem;
+  font-weight: 500;
+}
+/*# sourceMappingURL=Essentials.css.map */

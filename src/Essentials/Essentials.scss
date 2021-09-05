@@ -1,0 +1,39 @@
+.essentials {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 50rem 1fr;
+    grid-template-areas: "... essentials-content ...";
+    &-content {
+        grid-area: essentials-content;
+        &-heading {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: rgb(20, 43, 111);
+        }
+        &-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            margin-top: 2.5rem;
+        }
+    }
+
+    /* 1245px */
+    @media (max-width: 77.8125em) {
+        grid-template-columns: minmax(0.5rem, 1fr) minmax(0, 45rem) minmax(0.5rem, 1fr);
+    }
+}
+
+.essential {
+    justify-self: center;
+    &-svg-cont {
+        .essential-svg {
+            color: rgb(20, 43, 111);
+            font-size: 2rem;
+        }
+    }
+    & p {
+        color: rgb(20, 43, 111);
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}

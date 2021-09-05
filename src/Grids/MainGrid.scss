@@ -1,0 +1,14 @@
+.main-grid {
+    display: grid;
+    grid-template-columns: minmax(0.5rem, 1fr) minmax(0, 75rem) minmax(0.5rem, 1fr);
+
+    /* 1245px */
+    @media (max-width: 77.8125em) {
+        grid-template-columns: minmax(0.5rem, 1fr) minmax(0, 65rem) minmax(0.5rem, 1fr);
+    }
+
+    // 1090px
+    @media (max-width: 68.125em) {
+        grid-template-columns: minmax(0.5rem, 1fr) minmax(0, 55rem) minmax(0.5rem, 1fr);
+    }
+}

@@ -1,0 +1,109 @@
+.traceability {
+      grid-template-areas: "... traceability-content ...";
+  margin-top: 130px;
+}
+
+@media (max-width: 68.125em) {
+  .traceability {
+    margin-top: 100px;
+  }
+}
+
+.traceability-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: traceability-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (calc(50% - 4rem))[2];
+      grid-template-columns: repeat(2, calc(50% - 4rem));
+      grid-template-areas: "traceability-desc traceabilityimg";
+  grid-column-gap: 8rem;
+}
+
+.traceability-content-desc {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: traceability-desc;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.traceability-content-desc h2,
+.traceability-content-desc p {
+  text-align: left;
+  color: #142b6f;
+  letter-spacing: -1px;
+}
+
+.traceability-content-desc h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.traceability-content-desc p {
+  margin-top: 0;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.traceability-content-desc-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.traceability-content-desc button {
+  margin-top: 2rem;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #142b6f;
+  position: relative;
+}
+
+.traceability-content-desc button::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #142b6f;
+}
+
+.traceability-content-img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: traceabilityimg;
+}
+
+/* 1090px */
+@media (max-width: 68.125em) {
+  .traceability-content-desc h2 {
+    font-size: 1.825rem;
+    line-height: 2.75rem;
+  }
+  .traceability-content-desc p {
+    font-size: 1.1rem;
+  }
+  .traceability-content-desc button {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=Traceability.css.map */

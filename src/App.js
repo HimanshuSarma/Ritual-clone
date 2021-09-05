@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './Header/Header';
+import Hero from './Hero/Hero';
+import Essentials from './Essentials/Essentials';
+import WhoWeAre from './Who We Are/WhoWeAre';
+import Traceability from './Traceability/Traceability';
+import Shop from './Shop/Shop';
+import Featured from './FeaturedProducts/Featured';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Hero />
+      <Shop />
+      <Essentials />
+      <WhoWeAre />
+      <Traceability />
+      <Featured />
+      {/* <Slick /> */}
     </div>
   );
 }

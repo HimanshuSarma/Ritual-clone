@@ -1,0 +1,22 @@
+.main-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0.5rem, 1fr) minmax(0, 75rem) minmax(0.5rem, 1fr);
+      grid-template-columns: minmax(0.5rem, 1fr) minmax(0, 75rem) minmax(0.5rem, 1fr);
+  /* 1245px */
+}
+
+@media (max-width: 77.8125em) {
+  .main-grid {
+    -ms-grid-columns: minmax(0.5rem, 1fr) minmax(0, 65rem) minmax(0.5rem, 1fr);
+        grid-template-columns: minmax(0.5rem, 1fr) minmax(0, 65rem) minmax(0.5rem, 1fr);
+  }
+}
+
+@media (max-width: 68.125em) {
+  .main-grid {
+    -ms-grid-columns: minmax(0.5rem, 1fr) minmax(0, 55rem) minmax(0.5rem, 1fr);
+        grid-template-columns: minmax(0.5rem, 1fr) minmax(0, 55rem) minmax(0.5rem, 1fr);
+  }
+}
+/*# sourceMappingURL=MainGrid.css.map */

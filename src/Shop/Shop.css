@@ -1,0 +1,43 @@
+.shop {
+  margin-top: 4rem;
+      grid-template-areas: "... shop-content ...";
+}
+
+.shop-content-grid {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: shop-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+}
+
+.shop-content-item div {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.shop-content-item img {
+  height: 8.75rem;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+
+.shop-content-item img:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.shop-content-item p {
+  margin: 0;
+  padding: 1rem 0;
+  color: #142b6f;
+  font-size: 1.125rem;
+  font-weight: 500;
+  background-color: #f8f6f6;
+}
+/*# sourceMappingURL=Shop.css.map */
